@@ -1,0 +1,926 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #274c5b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1140px;
+    max-width: 95%;
+    margin: auto;
+}
+
+/* Шапка */
+
+.header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search {
+    display: flex;
+    background: #fafafa;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.search input {
+    width: 150px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #7eb693;
+    color: white;
+    font-size: 25px;
+}
+
+.cart {
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* Главный баннер */
+
+.banner {
+    height: 535px;
+    background-image: url("Image.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #f1eff0;
+}
+
+.banner-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text {
+    margin-left: 75px;
+}
+
+.green {
+    color: #7eb693;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.banner h1 {
+    font-size: 49px;
+    line-height: 1.15;
+    margin: 0 0 25px;
+}
+
+.yellow-button {
+    display: inline-block;
+    background: #efd372;
+    padding: 20px 28px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Рекламные блоки */
+
+.offers {
+    display: flex;
+    gap: 22px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.offer {
+    width: 50%;
+    height: 265px;
+    display: flex;
+    align-items: center;
+    padding-left: 38px;
+    border-radius: 22px;
+    background-size: cover;
+    background-position: center;
+}
+
+.fruit {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlLTFr0tV7V9ToKgyEyLwJIutCalasAKwMMXfvv_-hn_tcQR4uRmoXK_Y&s=10");
+    color: white;
+}
+
+.vegetable {
+    background-image: url("https://avatars.mds.yandex.net/i?id=a4d6a3326b27f21a50c7de03a2f89f62216c2154-5292157-images-thumbs&n=13");
+}
+
+.offer p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.offer h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+/* About Us */
+
+.about {
+    background: #f9f8f8;
+    padding: 90px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 37px;
+    line-height: 1.2;
+    margin: 5px 0 18px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.about-icon {
+    width: 65px;
+    height: 65px;
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.about-item h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.about-item p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.dark-button {
+    display: inline-block;
+    background: #274c5b;
+    color: white;
+    padding: 20px 28px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Товары */
+
+.products {
+    padding-top: 105px;
+    padding-bottom: 95px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 38px;
+    margin: 0 0 35px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.product {
+    background: #f9f8f8;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: left;
+    min-width: 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #274c5b;
+    color: white;
+    border-radius: 7px;
+    padding: 6px 11px;
+    font-size: 12px;
+}
+
+.product img {
+    width: 100%;
+    height: 195px;
+    object-fit: contain;
+    margin: 8px auto;
+}
+
+.product h3 {
+    font-size: 15px;
+    margin: 0 0 12px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border-top: 1px solid #dedede;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+.price del {
+    color: #aaaaaa;
+    font-size: 11px;
+}
+
+.price span {
+    margin-left: auto;
+    color: #ffa858;
+    font-size: 12px;
+}
+
+.load {
+    margin-top: 55px;
+}
+
+/* Для маленьких экранов */
+
+@media (max-width: 900px) {
+
+    .header {
+        height: auto;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .banner-text {
+        margin-left: 20px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .offers,
+    .about-content {
+        flex-direction: column;
+    }
+
+    .offer,
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .product img {
+        height: 130px;
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .price {
+        flex-wrap: wrap;
+    }
+
+}
+
+/* Отзывы покупателей */
+
+.testimonial {
+    background-image: url("Background.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #fafafa;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial-content h2 {
+    font-size: 38px;
+    margin: 10px 0 35px;
+}
+
+.customer-photo {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stars {
+    color: #ffa858;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.review-text {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.testimonial h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.consumer {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+.dots {
+    color: #7eb693;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.testimonial-line {
+    height: 1px;
+    background: #dddddd;
+    width: 75%;
+    margin: 55px auto;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #7eb693;
+    border-radius: 50%;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle h2 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.circle p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* Органические предложения */
+
+.organic-offer {
+    background: #274c5b;
+    padding: 100px 0;
+}
+
+.offer-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.offer-heading h2 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+.offer-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.offer-products .product {
+    background: #f9f8f8;
+}
+
+
+/* Eco Friendly */
+
+.eco {
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.eco-image {
+    width: 50%;
+}
+
+.eco-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.eco-text {
+    width: 50%;
+    background: white;
+    padding: 45px;
+    border-radius: 25px;
+    margin-left: -40px;
+}
+
+.eco-text h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 10px 0 25px;
+}
+
+.eco-text h3 {
+    font-size: 19px;
+    margin: 25px 0 10px;
+}
+
+.eco-text p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.eco-text .green {
+    color: #7eb693;
+    font-size: 24px;
+}
+
+
+/* Три категории */
+
+.organic-categories {
+    display: flex;
+    gap: 25px;
+    background: #f1f8f4;
+    padding: 100px 25px;
+}
+
+.category {
+    width: 33.33%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.juice {
+    background-image: url("1 (1).png");
+}
+
+.food {
+    background-image: url("image (4).png");
+}
+
+.cookies {
+    background-image: url("image (5).png");
+}
+
+.category-name {
+    background: white;
+    padding: 25px 40px;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* Новости */
+
+.news {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.news-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.news-heading h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.news-button {
+    border: 2px solid #274c5b;
+    padding: 18px 28px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.news-list {
+    display: flex;
+    gap: 30px;
+}
+
+.news-card {
+    width: 50%;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.news-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.news-date {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-date strong {
+    font-size: 20px;
+}
+
+.news-date span {
+    font-size: 13px;
+}
+
+.news-info {
+    position: relative;
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    width: 90%;
+    margin: -100px auto 0;
+    box-shadow: 0 10px 25px #eeeeee;
+}
+
+.news-info h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.news-info p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.news-info .yellow-button {
+    margin-top: 10px;
+}
+
+
+/* Подписка */
+
+.newsletter {
+    background-image: url("Photo.jpg");
+    background-color: #49bfe2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    padding: 75px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.newsletter h2 {
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+.subscribe {
+    display: flex;
+    gap: 5px;
+}
+
+.subscribe input {
+    width: 280px;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+.subscribe button {
+    background: #274c5b;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Подвал сайта */
+
+.footer {
+    padding-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+.footer-contact {
+    width: 25%;
+    text-align: right;
+    padding-right: 35px;
+    border-right: 1px solid #dddddd;
+}
+
+.footer-contact h3,
+.footer-links h3 {
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.footer-contact h4 {
+    font-size: 14px;
+    margin: 22px 0 5px;
+}
+
+.footer-contact p {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+}
+
+.footer-center {
+    width: 40%;
+    text-align: center;
+}
+
+.footer-center h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.footer-center p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.7;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social span {
+    width: 45px;
+    height: 45px;
+    background: #eff6f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footer-links {
+    width: 25%;
+    padding-left: 35px;
+    border-left: 1px solid #dddddd;
+}
+
+.footer-links a {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 18px;
+}
+
+.copyright {
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* Адаптация новых блоков */
+
+@media (max-width: 900px) {
+
+    .statistics {
+        flex-wrap: wrap;
+    }
+
+    .offer-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .eco-text {
+        padding: 25px;
+    }
+
+    .newsletter h2 {
+        font-size: 28px;
+    }
+
+    .subscribe input {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .statistics {
+        gap: 15px;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .offer-heading,
+    .eco,
+    .organic-categories,
+    .news-heading,
+    .news-list,
+    .newsletter,
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .offer-heading,
+    .news-heading,
+    .newsletter {
+        align-items: flex-start;
+    }
+
+    .eco-image,
+    .eco-text,
+    .category,
+    .news-card,
+    .footer-contact,
+    .footer-center,
+    .footer-links {
+        width: 100%;
+    }
+
+    .eco-text {
+        margin-left: 0;
+    }
+
+    .organic-categories {
+        padding: 50px 20px;
+    }
+
+    .category {
+        height: 300px;
+    }
+
+    .newsletter {
+        padding: 35px 20px;
+    }
+
+    .subscribe {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .footer-contact,
+    .footer-links {
+        border: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin: 12px;
+    }
+
+}
